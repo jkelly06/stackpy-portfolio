@@ -1,9 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Space-AI | The 2026 Asset Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes scan { 0% { background-position: 0 -100vh; } 100% { background-position: 0 100vh; } }
+        .scanline { background: linear-gradient(to bottom, transparent, rgba(34, 197, 94, 0.03), transparent); background-size: 100% 100vh; animation: scan 10s linear infinite; }
+        body { background: #020205; color: #f8fafc; font-family: 'Inter', sans-serif; margin: 0; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .glass:hover { border-color: rgba(59, 130, 246, 0.5); background: rgba(255, 255, 255, 0.04); }
+        .status-dot { height: 8px; width: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; margin-right: 8px; box-shadow: 0 0 10px #22c55e; }
+    </style>
+</head>
+<body class="scanline">
 
+    <header class="p-6 border-b border-white/10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+            <div class="font-black text-2xl tracking-tighter uppercase tracking-widest">Stackpy<span class="text-blue-500">.com</span></div>
+            <div class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-[9px] text-blue-400 font-mono tracking-[0.3em] uppercase">
+                Portfolio Hub
+            </div>
+        </div>
+        <div class="flex gap-6 font-mono text-[9px] text-slate-500 tracking-widest uppercase">
+            <span><span class="status-dot"></span> System: Operational</span>
+            <span class="hidden md:inline">Node: Cislunar-Gamma</span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <section class="mb-16">
+            <h1 class="text-4xl md:text-7xl font-black mb-6 tracking-tighter leading-[0.9]">
+                Sovereign <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Space-AI Suite.</span>
+            </h1>
+            <p class="max-w-2xl text-slate-400 text-lg leading-relaxed">
+                Strategic digital assets for the 2026 interplanetary economy. A curated ecosystem for Lunar edge computing, orbital defense, and telemetry standardization.
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            
+            <div class="p-8 rounded-2xl glass md:col-span-2 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-10">
+                        <span class="text-[10px] font-mono text-blue-500 tracking-[0.4em] uppercase">Core Brand Lock</span>
+                        <span class="text-[10px] font-mono text-slate-600">ID: LP-2026</span>
+                    </div>
+                    <div class="flex flex-wrap gap-x-12 gap-y-4 mb-8">
+                        <div>
+                            <h2 class="text-4xl font-black italic tracking-tighter">Lunarpy.com</h2>
+                            <p class="text-[10px] text-slate-500 font-mono mt-2 uppercase tracking-widest">Primary Cislunar Gateway</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-black italic tracking-tighter text-blue-400">Lunarpy.ai</h2>
+                            <p class="text-[10px] text-slate-500 font-mono mt-2 uppercase tracking-widest">Autonomous Edge Intelligence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-white/5 flex justify-between items-center">
+                    <span class="text-[10px] font-mono uppercase text-slate-400 tracking-widest italic">Interoperable Asset Pair</span>
+                    <span class="px-4 py-1 bg-white/5 rounded-full text-[9px] font-mono uppercase">Verified Suite</span>
+                </div>
+            </div>
+
+            <div class="p-8 rounded-2xl glass">
+                <h3 class="text-emerald-500 font-mono text-[10px
     
-<section class="max-w-7xl mx-auto px-6 py-8 border-t border-white/5 mt-12">
-    <div class="flex flex-wrap justify-center gap-8 opacity-40 grayscale filter">
-        <span class="text-[9px] font-mono tracking-widest">TRANSACTIONS VIA ESCROW.COM</span>
-        <span class="text-[9px] font-mono tracking-widest">PORKBUN AUTHENTICATED</span>
-        <span class="text-[9px] font-mono tracking-widest">24H ASSET TRANSFER</span>
-    </div>
-</section>
