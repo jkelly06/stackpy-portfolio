@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Space-AI | Asset Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes scan { 0% { background-position: 0 -100vh; } 100% { background-position: 0 100vh; } }
+        .scanline { background: linear-gradient(to bottom, transparent, rgba(34, 197, 94, 0.03), transparent); background-size: 100% 100vh; animation: scan 10s linear infinite; }
+        body { background: #020205; color: #f8fafc; font-family: sans-serif; margin: 0; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body class="scanline">
+
+    <header class="p-6 border-b border-white/10 max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="font-black text-2xl tracking-tighter uppercase">Stackpy<span class="text-blue-500">.com</span></div>
+        </div>
+        <div class="font-mono text-[10px] text-slate-500 tracking-widest uppercase">System: Online</div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <section class="mb-16 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">
+                Sovereign <br><span class="text-blue-400">Space-AI Assets.</span>
+            </h1>
+            <p class="max-w-2xl text-slate-400 text-lg">2026 Interplanetary Infrastructure Suite.</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-8 rounded-2xl glass md:col-span-2">
+                <h2 class="text-3xl font-black italic mb-2">Lunarpy.com + Lunarpy.ai</h2>
+                <p class="text-blue-500 font-mono text-[10px] tracking-widest uppercase italic">Primary Brand Lock</p>
+            </div>
+            
+            <div class="p-8 rounded-2xl glass">
+                <h3 class="text-emerald-500 font-mono text-[10px] uppercase mb-4 tracking-widest">Spacezulu.com</h3>
+                <p class="text-sm text-slate-400">PNT & Timing Protocol.</p>
+            </div>
+
+            <div class="p-8 rounded-2xl glass border-blue-500/20 bg-blue-500/5 lg:col-span-3">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <img src="image_808e1c.png" alt="Mission Patch" class="w-48 h-48 object-contain">
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-2xl font-black mb-4 uppercase">Acquisition</h2>
+                        <p class="text-slate-400 mb-6">Contact us for full 8-domain suite terms.</p>
+                        <a href="mailto:contact@lunarpy.com" class="inline-block px-10 py-4 bg-white text-black font-bold uppercase text-xs tracking-widest hover:bg-blue-600 hover:text-white transition">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
