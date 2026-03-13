@@ -6,10 +6,13 @@
     <title>Sovereign Space-AI | Asset Suite</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-text { font-size: clamp(2.8rem, 10vw, 10rem); line-height: 0.9; }
-        .brand-text { font-size: clamp(2rem, 8vw, 8.5rem); line-height: 1; }
-        .desc-text { font-size: clamp(1.2rem, 3.5vw, 3.5rem); line-height: 1.2; }
-        .glow-border { box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
+        /* Precision typography: massive on desktop, fits on mobile */
+        .hero-text { font-size: clamp(2.5rem, 9vw, 10rem); line-height: 0.9; }
+        .brand-text { font-size: clamp(1.8rem, 7vw, 8rem); line-height: 1; }
+        .desc-text { font-size: clamp(1.1rem, 3vw, 3rem); line-height: 1.2; }
+        .email-text { font-size: clamp(1.5rem, 5vw, 5rem); }
+        
+        .glow-border { box-shadow: 0 0 30px rgba(59, 130, 246, 0.15); }
     </style>
 </head>
 <body class="bg-[#020205] text-slate-50 font-sans antialiased overflow-x-hidden">
@@ -20,76 +23,60 @@
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" fill="#3b82f6"/>
                 </svg>
-                <h1 class="font-black text-2xl md:text-5xl tracking-tighter uppercase">Stackpy<span class="text-blue-500">.com</span></h1>
+                <h1 class="font-black text-2xl md:text-4xl tracking-tighter uppercase">Stackpy<span class="text-blue-500">.com</span></h1>
             </div>
         </header>
 
-        <main class="max-w-7xl mx-auto px-6 py-12 md:py-24">
-            <section class="mb-16 md:mb-32">
+        <main class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+            <section class="mb-16 md:mb-24">
                 <h1 class="hero-text font-black mb-8 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
                     Sovereign Space-AI.
                 </h1>
-                <p class="max-w-5xl text-slate-300 text-xl md:text-5xl leading-tight italic font-light">
+                <p class="max-w-4xl text-slate-300 text-xl md:text-4xl leading-tight italic font-light">
                     A consolidated 8-asset ecosystem for the 2026-2030 orbital economy.
                 </p>
             </section>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
                 
-                <div class="p-8 md:p-16 rounded-[2rem] md:rounded-[3rem] border-2 md:border-4 border-blue-500/40 bg-white/5 lg:col-span-3 shadow-2xl glow-border">
-                    <span class="text-lg md:text-2xl font-mono text-blue-500 tracking-[0.3em] uppercase block mb-6 md:mb-10 font-bold">Primary Brand Lock</span>
-                    <h2 class="brand-text font-black italic tracking-tighter text-white mb-6 md:mb-10 uppercase">Lunarpy.ai + .com</h2>
-                    <p class="desc-text text-slate-300">
+                <div class="p-8 md:p-16 rounded-[2rem] border-2 md:border-4 border-blue-500/30 bg-white/5 lg:col-span-3 glow-border">
+                    <span class="text-sm md:text-xl font-mono text-blue-500 tracking-[0.3em] uppercase block mb-6 font-bold">Primary Brand Lock</span>
+                    <h2 class="brand-text font-black italic tracking-tighter text-white mb-6 uppercase">Lunarpy.ai + .com</h2>
+                    <p class="desc-text text-slate-300 font-light">
                         The flagship namespace for Lunar-centric Artificial Intelligence and autonomous orbital processing.
                     </p>
                 </div>
 
-                <div class="p-8 md:p-12 rounded-3xl border border-white/10 bg-white/5 hover:border-emerald-500/40 transition-all group">
-                    <h3 class="text-emerald-500 font-mono text-lg md:text-2xl uppercase mb-4 font-bold">Spacezulu.com</h3>
-                    <p class="text-xl md:text-3xl text-slate-400 leading-relaxed italic group-hover:text-white transition-colors">Infrastructure for Lunar Time (LTC) and position telemetry.</p>
+                <div class="p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all group">
+                    <h3 class="text-emerald-500 font-mono text-lg uppercase mb-4 font-bold tracking-widest">Spacezulu.com</h3>
+                    <p class="text-lg md:text-2xl text-slate-400 leading-relaxed italic group-hover:text-white transition-colors">Infrastructure for Lunar Time (LTC) and position telemetry.</p>
                 </div>
 
-                <div class="p-8 md:p-12 rounded-3xl border border-white/10 bg-white/5 hover:border-red-500/40 transition-all group">
-                    <h3 class="text-red-500 font-mono text-lg md:text-2xl uppercase mb-4 font-bold">Sovereignvoid.com</h3>
-                    <p class="text-xl md:text-3xl text-slate-400 leading-relaxed italic group-hover:text-white transition-colors">Securing orbital corridors through decentralized encryption.</p>
+                <div class="p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all group">
+                    <h3 class="text-red-500 font-mono text-lg uppercase mb-4 font-bold tracking-widest">Sovereignvoid.com</h3>
+                    <p class="text-lg md:text-2xl text-slate-400 leading-relaxed italic group-hover:text-white transition-colors">Securing orbital corridors through decentralized encryption.</p>
                 </div>
 
-                <div class="p-8 md:p-12 rounded-3xl border border-white/10 bg-white/5 hover:border-blue-500/40 transition-all group">
-                    <h3 class="text-blue-500 font-mono text-lg md:text-2xl uppercase mb-4 font-bold">Deepspacecore.com</h3>
-                    <p class="text-xl md:text-3xl text-slate-400 leading-relaxed italic group-hover:text-white transition-colors">DSN relay and command centralization for signal processing.</p>
+                <div class="p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all group">
+                    <h3 class="text-blue-500 font-mono text-lg uppercase mb-4 font-bold tracking-widest">Deepspacecore.com</h3>
+                    <p class="text-lg md:text-2xl text-slate-400 leading-relaxed italic group-hover:text-white transition-colors">DSN relay and command centralization for signal processing.</p>
                 </div>
 
-                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="p-6 border border-white/10 bg-white/5 rounded-2xl">
-                        <h4 class="text-cyan-400 font-mono text-sm md:text-lg uppercase mb-2">Orbitpy.com</h4>
-                        <p class="text-lg md:text-2xl font-bold italic text-white">LEO Mesh Networking</p>
+                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                    <div class="p-6 border border-white/5 bg-white/5 rounded-xl">
+                        <h4 class="text-cyan-400 font-mono text-xs uppercase mb-1">Orbitpy.com</h4>
+                        <p class="text-xl font-bold italic text-white">LEO Mesh Networking</p>
                     </div>
-                    <div class="p-6 border border-white/10 bg-white/5 rounded-2xl">
-                        <h4 class="text-indigo-400 font-mono text-sm md:text-lg uppercase mb-2">Deepspacepy.com</h4>
-                        <p class="text-lg md:text-2xl font-bold italic text-white">Telemetry Modules</p>
+                    <div class="p-6 border border-white/5 bg-white/5 rounded-xl">
+                        <h4 class="text-indigo-400 font-mono text-xs uppercase mb-1">Deepspacepy.com</h4>
+                        <p class="text-xl font-bold italic text-white">Telemetry Modules</p>
                     </div>
-                    <div class="p-6 border border-white/10 bg-white/5 rounded-2xl">
-                        <h4 class="text-blue-400 font-mono text-sm md:text-lg uppercase mb-2">Stackpy.com</h4>
-                        <p class="text-lg md:text-2xl font-bold italic text-white">Integration Hub</p>
+                    <div class="p-6 border border-white/5 bg-white/5 rounded-xl">
+                        <h4 class="text-blue-400 font-mono text-xs uppercase mb-1">Stackpy.com</h4>
+                        <p class="text-xl font-bold italic text-white">Integration Hub</p>
                     </div>
                 </div>
 
-                <div class="lg:col-span-3 bg-gradient-to-r from-blue-900/60 to-transparent border-2 md:border-4 border-blue-500/40 rounded-[2rem] md:rounded-[4rem] p-8 md:p-24 mt-12 text-center md:text-left">
-                    <h2 class="text-5xl md:text-[9rem] font-black mb-6 md:mb-12 uppercase text-white tracking-tighter leading-none">Acquisition</h2>
-                    <p class="text-slate-200 mb-10 md:mb-20 text-2xl md:text-[5rem] leading-tight font-bold break-words">
-                        <span class="text-blue-400 uppercase font-mono">John@lunarpy.ai</span>
-                    </p>
-                    <a href="mailto:John@lunarpy.ai?subject=Inquiry: Sovereign Suite Acquisition" 
-                       class="inline-block w-full md:w-auto px-8 md:px-24 py-6 md:py-12 bg-white text-black font-black text-xl md:text-5xl uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all shadow-2xl active:scale-95">
-                        Inquire Now
-                    </a>
-                </div>
-            </div>
-        </main>
-
-        <footer class="p-10 text-center text-slate-600 font-mono text-sm">
-            © 2026 Sovereign Space-AI Ecosystem
-        </footer>
-    </div>
-</body>
-</html>
+                <div class="lg:col-span-3 bg-gradient-to-br from-blue-900/40 to-slate-900/40 border-2 border-blue-500/30 rounded-[2.5rem] p-8 md:p-20 mt-8 text-center md:text-left">
+                    <h2 class="text-4xl md:text-8xl
+              
